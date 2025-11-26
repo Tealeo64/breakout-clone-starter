@@ -4,11 +4,11 @@
 vspeed = -vspeed;
 
 // Tell the other instance (the brick) to destroy itself.
-
+instance_destroy(other);
 
 
 // Add one point to the score.
-
+obj_game.scored++;
 
 // Play a different sound for breaking a brick.
 audio_play_sound(sfx_break, 1, false);
